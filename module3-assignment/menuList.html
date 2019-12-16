@@ -1,0 +1,8 @@
+<h3>Menu Items</h3>
+<ul>
+    <li ng-repeat="item in ctrl.items">
+        {{item.short_name}}, {{item.name}}, {{item.description}}
+        <button ng-click="ctrl.onRemove({index: $index})">Don't want this one!</button>
+    </li>
+    <div ng-if="ctrl.itemsInList()">Nothing found</div>
+</ul>
