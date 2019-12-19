@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html ng-app="MenuApp">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/styles.css">
+        <title>Module 4 - Assignment</title>
+    </head>
+    <body>
+        <h1>Welcome to David's restaurant!</h1>
+        <ui-view></ui-view>
+
+        <script src="lib/angular.min.js"></script>
+        <script src="lib/angular-ui-router.min.js"></script>
+
+        <!-- Modules -->
+        <script src="data.module.js"></script>
+        <script src="menuapp.module.js"></script>
+
+        <!-- Routes -->
+        <script src="router.js"></script>
+
+        <!-- MenuData module -->
+        <script src="categories.component.js"></script>
+        <script src="items.component.js"></script>
+        <script src="menudata.service.js"></script>
+    </body>
+</html>
